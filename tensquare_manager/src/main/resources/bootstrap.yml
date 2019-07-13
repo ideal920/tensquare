@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: manager #配置文件的前缀名
+      profile: dev  #配置文件的后缀名
+      label: master #从哪个git仓库分支读取
+      uri: http://127.0.0.1:12000  #指定配置中心的服务器地址

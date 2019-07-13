@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tensquare_common:war">
+    <output-path>$PROJECT_DIR$/tensquare_common/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tensquare_common</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="tensquare_common.war">
+      <element id="artifact" artifact-name="tensquare_common:war exploded" />
+    </root>
+  </artifact>
+</component>

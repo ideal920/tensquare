@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tensquare_spit:war">
+    <output-path>$PROJECT_DIR$/tensquare_spit/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tensquare_spit</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="tensquare_spit-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="tensquare_spit:war exploded" />
+    </root>
+  </artifact>
+</component>
