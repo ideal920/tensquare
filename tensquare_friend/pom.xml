@@ -16,10 +16,17 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
+        <!--
+                  Oracle MySQL的MySQL连接器组件中的漏洞（子组件：Connector / J）。
+                  受影响的受支持版本是8.0.15和更低版本。
+                  难以利用的漏洞使高特权攻击者可以登录到执行MySQL连接器的基础结构，以破坏MySQL连接器。
+                  成功的攻击需要攻击者以外的其他人与人进行交互。
+                  成功攻击此漏洞可能导致MySQL连接器被接管。
+         -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.39</version>
+            <version>8.0.16</version>
         </dependency>
         <dependency>
             <groupId>com.tensquare</groupId>
