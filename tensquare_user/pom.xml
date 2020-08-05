@@ -32,11 +32,19 @@
 		  <groupId>org.springframework.boot</groupId>
 		  <artifactId>spring-boot-starter-amqp</artifactId>
 	  </dependency>
-
+	  <!--
+		Spring Security版本5.3.2之前的5.3.x，
+		版本5.2.4之前的5.2.x，
+		版本5.1.10之前的5.1.x，
+		版本5.0.16之前的5.0.x和
+		版本4.2.16之前的4.2.x
+		使用固定的在可查询文本加密器的实现中，使用CBC模式的null初始化向量。
+		具有使用这种加密器加密的数据的访问权的恶意用户可能能够使用字典攻击来导出未加密的值。
+	  -->
 	  <dependency>
 		  <groupId>org.springframework.security</groupId>
 		  <artifactId>spring-security-core</artifactId>
-		  <version>5.1.5.RELEASE</version>
+		  <version>5.1.10.RELEASE</version>
 	  </dependency>
 	  <dependency>
 		  <groupId>org.springframework.cloud</groupId>
